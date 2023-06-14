@@ -7,54 +7,53 @@
 </head>
 <body>
     <h1>Payment Form</h1>
-    <p>Required fields are marked by *
-    </p>
+    <p>Required fields are marked by *</p>
     <fieldset>
         <legend>Contact Information</legend>
-        <label for="marriageStatus"> Mx.</label>
+        <label for="mx"> Mx.</label>
         <br>
-        <input type="radio" name="preference" id="marriageStatus" checked>
+        <input type="radio" name="preference" id="mx" checked>
         <br>
-        <label for="marriageStatus"> Mr.</label>
+        <label for="mr"> Mr.</label>
         <br>
-        <input type="radio" name="preference" id="marriageStatus" >
+        <input type="radio" name="preference" id="mr">
         <br>
-        <label for="marriageStatus"> Ms.</label>
+        <label for="ms"> Ms.</label>
         <br>
-        <input type="radio" name="preferrence" id="marriageStatus" >
+        <input type="radio" name="preference" id="ms">
         <br>
-        <label for="marriageStatus"> Mrs.</label>
+        <label for="mrs"> Mrs.</label>
         <br>
-        <input type="radio" name="preferrence" id="marriageStatus" >
+        <input type="radio" name="preference" id="mrs">
         <br>
-        <label for="name"> Name</label>
+        <label for="fullName"> Name</label>
         <br>
-        <input type="text" name="fullname" id="fullName" >
+        <input type="text" name="fullName" id="fullName">
         <br>
-        <label for="email"> Email</label>
+        <label for="entireEmail"> Email</label>
         <br>
-        <input type="text" name="entireEmail" id="entireEmail" >
+        <input type="text" name="entireEmail" id="entireEmail">
     </fieldset>
     <fieldset>
         <legend>Payment Information</legend>
         <form action="#" method="post">
-            <select id="Credit Card Number" name="Credit Card Number">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="american-express">American Express</option>
-                <option value="discover">Discover</option>
+            <select id="credit-card-number" name="credit-card-number">
+                <option value="visa"> Visa</option>
+                <option value="mastercard"> Mastercard</option>
+                <option value="american-express"> American Express</option>
+                <option value="discover"> Discover</option>
             </select> 
-            <label for="Credit Card Number">Credit Card Number</label>
-            <label for="name" id="name"></label>
+            <label for="credit-card-number"> Credit Card Type</label>
             <br>
-            <input type="tel" name="Credit Card Number" id="name" placeholder="xxxx xxxx xxxx xxxx" required>
+            <label for="credit-card"> Credit Card Number</label>
             <br>
-            <label for="expiration-Date" id="Expiration-Date" >Expiration Date ><label>
+            <input type="tel" name="credit-card" id="credit-card" placeholder="xxxx xxxx xxxx xxxx" required>
             <br>
-            <input type="text" required>
-        </label>
-    </fieldset>
-    <input type="submit" value="Submit Payment"/>
-</form>
+            <label for="expiration-date"> Expiration Date</label>
+            <br>
+            <input type="text" id="expiration-date" name="expiration-date" required>
+        </fieldset>
+        <input name="form" type="submit" value="Submit Payment">
+    </form>
 </body>
 </html>
